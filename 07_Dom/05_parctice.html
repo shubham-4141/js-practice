@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code </title>
+</head>
+<body style = "background-color:#212121; color:#ffff" >
+    
+      <ol class = "language"></ol>
+
+</body>
+<script>
+    function addElement(Element) {
+       const li = document.createElement('li')
+       li.innerHTML=`${Element}`
+       document.querySelector('.language').appendChild(li)
+    }
+    addElement('java')
+    addElement('python')
+    // optimaize way od add element 
+    function addOptiElement(Element){
+        const li =document.createElement("li")
+        li.appendChild(document.createTextNode(Element))
+        document.querySelector('.language').appendChild(li)
+    }
+    
+    addOptiElement("javascript")
+    addOptiElement("typescript")
+
+    // edit // yaha eshe kr sakte hai kyuki element phle se hai hm kevL EDit kr rhe hai
+    const editlang =  document.querySelector('li:nth-child(2)')
+    editlang.innerHTML="golang"
+
+    // edit 
+    const firstlang = document.querySelector('li:first-child')
+    // firstlang.outerHTML = "<li> ruby </li>"
+    const newfirst = document.createElement("li")
+    newfirst.textContent = "c++"
+    firstlang.replaceWith(newfirst)
+
+
+</script>
+</html>

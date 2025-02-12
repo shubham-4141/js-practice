@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure and lexical scoping </title>
+</head>
+<body style="background-color: #313131;">
+    <button class="orange">Orange</button>
+    <button class="green">Green</button>
+    
+</body>
+<script>
+    // function init() {
+    //     var name = "Mozilla"; 
+    //     function displayName() {
+    //           console.log(name);
+    //      }
+    //     displayName();
+    // }
+    //     init();
+
+    // function outer(){
+    //     let username = "shubham"
+    //     // console.log("OUTER",secret); beta baap ko kuch nhi deta 
+        
+    //     function inner(){
+    //         let secret =  "my123"
+    //          console.log("inner",  username); // beta baap se le skta hai
+             
+    //     }
+    //     function innerTwo (){
+    //         console.log("inner",username);
+    //         console.log(secret) // bhai bhi kisi ko kuch nhi shere karta  
+            
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer()
+  
+    // console.log("to outer :",username);
+    
+    // function makeFunc() {
+    //   const name = "Mozilla";
+    //     function displayName() {
+    //        console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+
+</script>
+  
+<script>
+    //  document.querySelector(".orange").addEventListener('click',function(){
+    //     document.body.style.backgroundColor=`orange`;
+    //  })
+    //  document.querySelector(".green").onclick = function(){
+    //     document.body.style.backgroundColor=`green`;
+    //  }
+
+    // make click handler 
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor=`${color}`// ye kaam nhi krega 
+
+        return function(){
+            document.body.style.backgroundColor=`${color}`
+        }
+    }
+    document.querySelector(".orange").onclick = clickHandler("orange")
+    document.querySelector(".green").onclick = clickHandler("green")
+</script>
+</html>
