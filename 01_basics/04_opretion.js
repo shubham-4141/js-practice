@@ -13,14 +13,14 @@ let str2=" shubham"
 
 let str3 =str1+str2
 
-console.log("1"+ 3);
-console.log(1+"2");
-console.log("1"+2+2);
-console.log(2+2+"2");
+console.log("1"+ 3);//13
+console.log(1+"2");//12
+console.log("1"+2+2);//122
+console.log(2+2+"2"); //42
 console.log(str3);
 console.log(str3);// not write complex code writ readable code
 
-console.log(+true);
+console.log(+true);// 1
 
 let num1,num2,num3
 
@@ -36,19 +36,19 @@ https://in.search.yahoo.com/search?fr=mcafee&type=E210IN885G0&p=postfix+and+pref
 
 //these type of compersion genrally avoide 
 
-console.log("2" > 1);
-console.log("02" > 1);
+console.log("2" > 1);  // true
+console.log("02" > 1); // true but we dont compare two different data types
 
 
 
-console.log(null > 0 );
-console.log(null == 0);
-console.log(null >= 0);
+console.log(null > 0 ); // false
+console.log(null == 0); // false
+console.log(null >= 0);// true
 
 
-console.log(undefined == 0);
-console.log(undefined > 0);
-console.log(undefined < 0);
+console.log(undefined == 0);// false
+console.log(undefined > 0); //false
+console.log(undefined < 0);//false
 
 // === strict chech it check values with the datatype  also
 

@@ -1,7 +1,7 @@
 // primitive // call by value
 // 7 type : string ,number,  bigInt ,null, undefined,symbol
 
-const score =100
+const score = 100
 const scoreValue = 100.3
  
 const isLoggedIn = false
@@ -11,7 +11,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log( id === anotherId);
+console.log( id === anotherId); // false becuse symbol can genrate different retrun value
 
 const bigNumber =756889780976n// ye jo n hai bigint bnata hai
 
@@ -32,6 +32,8 @@ let myobj = {
  const myFunction = function() {
     console.log("hello world");
 }
+console.log("type of array",typeof(heros))
+console.log("type of object",typeof(myobj))
 console.log( typeof symbol);
 console.log( typeof bigInt);
 console.log( typeof myFunction); // function return but bola jata hai object function bola jata hai 

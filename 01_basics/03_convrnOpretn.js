@@ -4,11 +4,12 @@ console.log(typeof score);
 console.log(typeof (score));
 
 let valueInNumber=Number(score)
-console.log(typeof valueInNumber);
+console.log(typeof valueInNumber); // jb hm score ko num me covert kiye to dekhne se to lag rha hai pr actually it does not convert in number it gives NaN type
+
 console.log(valueInNumber);
 
 //"33"=>33
-//"33abc"=>NaN not an number
+//"33abc"=>NaN not an number iska type number hai vo confusing hai 
 // true=>1//false=>0
 
 

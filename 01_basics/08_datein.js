@@ -9,30 +9,35 @@ let myDate = new Date()
 // console.log(myDate.toJSON());//2025-01-03T18:55:55.214Z
  
 
-// let myCreatdDate = new Date(2025,0,4)
-// console.log(myCreatdDate.toDateString());
+let myCreatdDate = new Date(2025,0,4) // 0 ka matlab js me january hota hai ager hm month one digit me likhenge
+console.log(myCreatdDate.toDateString());
 
 
 //let myCreatdDate = new Date ("2025-01-04")
-let myCreatdDate = new Date ("04-01-2025")
-//console.log(myCreatdDate.toLocaleString());
+// let myCreatdDate = new Date ("04-01-2025")
+console.log(myCreatdDate.toLocaleString());
 
 
 let myTimestemp = Date.now()
 
-//console.log(myTimestemp);// use for comparision
+// console.log(myTimestemp);// use for comparision
 //console.log(myCreatdDate.getTime());
-// console.log(Math.floor(Date.now()/1000));
+
+// INTERWIVE IMPORTENT ************
+
+
+// console.log(Math.floor(Date.now()/1000)); 
 
 let newDate= new Date()
 console.log(newDate);
-console.log(newDate.getMonth() +1);
+console.log(newDate.getMonth() +1); // month 0 se start hota hai
 console.log(newDate.getDay());
 
 // console.log(`${newDate.getDay()} and time `);
 
 newDate.toLocaleString('default',{
     weekday:"long",
+    // timeZone:""
 
 })
 

@@ -1,6 +1,6 @@
 "use strict";//treat all js code as newer version
 
-//alert(3+3)//we are using node.js ,not browser
+//alert(3+3)//we are using node.js ,not browser me run hoga node js me run nhi hoga
 
 console.log(3
     +
@@ -25,5 +25,7 @@ let temp=null
 //non premptive datatype
 //object
 
+
+// important for interwive 
 console.log(typeof undefined);//undefined
 console.log(typeof null);//object
