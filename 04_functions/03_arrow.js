@@ -9,22 +9,22 @@ const user = {
 
 }
 
-// user.welcomeMassage()
+// user.welcomeMassage() // shubham ,welcome to website
 // user.username = "ram"
 // user.welcomeMassage()
 
-// console.log(this);
+// console.log(this); // ye return krega {}
 
 // function chai(){
 //     let username = "shubham"
-//     console.log(this.username);
+//     console.log(this.username); // ye fuction ke ander work nhi krta hai keval object ke ander work krta hai  ye (undifined dega)
 // }
 
 // chai()
  
-// const chai = function(){
+// const chai = function(){ // vperval bhi same hai
 //     let username = "shubham"
-//     console.log(this.username);
+//     console.log(this.username);// undefiend 
     
 // }
 const chai = () => {
@@ -33,7 +33,7 @@ const chai = () => {
     
 }
 
-// chai()
+chai()
 
 // const addTwo = (num1, num2 ) => {
 //     return num1 + num2  // basic arrow function
@@ -47,8 +47,9 @@ const chai = () => {
 // const addTwo = (num1,num2) => (num1 + num2)
 
 const addTwo = (num1,num2) => ({username:"shubham"})
+// const addTwo = (num1,num2) => {username:"shubham"} // return undefined
 
-console.log(addTwo(3,4));
+// console.log(addTwo(3,4));
 
 // const myArray = [2, 3, 8, 4, 8]
 

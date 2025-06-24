@@ -5,7 +5,7 @@
 (function chai(){
     console.log(`DB CONNECTED`);
     
-}) ();// ; it use to stop the context of invoked fuction 
+}) ();// ; it use semicollen to stop the context of invoked fuction 
 // chai()
 
 //UNNAMED IIFE

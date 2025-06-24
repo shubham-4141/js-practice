@@ -1,6 +1,6 @@
-//const tinderUser = new Object()// singleton object 
+//const tinderUser = new Object()// singleton object // output {}
 
-const tinderUser={}  // non singleton 
+const tinderUser={}  // non singleton // output {}
 
 tinderUser.id = "123abc"
 tinderUser.name = "shubham"
@@ -9,6 +9,7 @@ tinderUser.isLoggenIn =  false
 // console.log(tinderUser);
 
 const regularUser = {
+    email:"shubham@gmail.com",
     fullname:{
         userfullname:{
             firstname:"shubham",
@@ -51,10 +52,10 @@ users[1].email
 
 // console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // retun the key in form of array for further use 
+console.log(Object.keys(tinderUser)); // retun the key in form of array for further use  // it gives datatype array
 
 console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));// iska kam use hota hai
+console.log(Object.entries(tinderUser));// iska km use hota hai ye key value pair output deta hai
 
 console.log(tinderUser.hasOwnProperty('isLoggenIn'));
 

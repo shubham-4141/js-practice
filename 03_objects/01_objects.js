@@ -26,13 +26,14 @@
 //  console.log(jsUser["email"]);
 //  console.log(jsUser["full name"]);
 //  console.log(jsUser[mySym1]);
+//  console.log(jsUser.mySym1); // yaha value to a jayegi pr datatype diffrente hai
 //  console.log(typeof jsUser[mySym1]);
 
  jsUser.email = "amer@gmail.com"
-// Object.freeze(jsUser)
+// Object.freeze(jsUser) // iske baad object me koi value modify nhi hogi
 
  jsUser.email = "amer@112gmail.com"
- console.log(jsUser);
+//  console.log(jsUser); 
  
  jsUser.greeting = function(){
     console.log("hello JS user ")

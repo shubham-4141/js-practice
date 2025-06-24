@@ -10,22 +10,23 @@ console.log(myArr[0]);
 // array methods
 
 // myArr.push(5)
-// myArr.push(9)
+// myArr.push(9) // add value in array append 
 // myArr.pop() // always remove last value 
 
 
-// myArr.unshift(9) // time consuming in large data 
-// myArr.shift()
+// myArr.unshift(9) // time consuming in large data  it add value in the begining of array then shift all elements by one place then it is costly operation 
 
-console.log(myArr.includes(3));
-console.log(myArr.indexOf(6));
+// myArr.shift() // age means 0 index se remove krta hai 
+
+console.log(myArr.includes(3)); // return data type boolean
+console.log(myArr.indexOf(6)); // jo value array me nhi hogi then it return -1 index value
 
 const newArr = myArr.join()
 
 console.log(myArr);
 console.log("type of myArr =>", typeof myArr);
-console.log(newArr); // it gives same value but change its datatype
-console.log("type of newArr =>", typeof newArr); // it gives same value but change its datatype
+console.log(newArr); // it gives same value but change its datatype  
+console.log("type of newArr =>", typeof newArr); // it gives same value but change its datatype (String)
 
 
 // slice and splice important for interview

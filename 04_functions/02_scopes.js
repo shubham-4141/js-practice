@@ -1,6 +1,6 @@
-// var c= 300 //  var ko hm nhi use krenge 
+// var c= 300 //  var ko hm nhi use krenge kyuki ye scope nhi samjhta axe se
 
- { }// scope
+ { }// scope khte hai isko
 
  let a = 300
 
@@ -33,11 +33,11 @@ function one() {
         console.log(username);
         
       }
-    //   console.log(website);
+    //   console.log(website); // ye access nhi hogi
 
       Two()
       
-}
+}  // isi ko closure kahte hai 
 
 // one()
 
@@ -62,12 +62,12 @@ function addOne(num){
     return num+1
 
 }
-// console.log(addOne(5));
+console.log(addOne(5));
 
-console.log(addTwo(5)) // because of hosting it give error // decleration  se pahle nhi use kr skte 
+// console.log(addTwo(5)) // because of hosting it give error // decleration  se pahle nhi use kr skte 
 
 const addTwo = function(num){
-    return num + 3
+    return num + 3     // ye hai to function hai isko kabhi kabhi expression bhi bilte hai
 }
 
-// console.log(addTwo(5))
+console.log(addTwo(5))

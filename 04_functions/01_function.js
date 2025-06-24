@@ -9,18 +9,20 @@ console.log("a");
 console.log("m");
 }
 
-// sayMyname()
+// sayMyname() // sayMyname hai refrence () ye hai excution 
 
 // function addTwonumbers(number1,number2){
 //      console.log(number1+number2);
+     // yaha koi value return nhi ho raha hai
      
 // }
 
-function addTwonumbers(number1,number2){
+function addTwonumbers(number1,number2/*parameter */){
     
     // let result = number1  +  number2
-    // return result
+    // return result 
     return number1 + number2
+    // return ke baad kuch bhi nhi execute hota hai
     
 }
 addTwonumbers(3,1)
@@ -48,11 +50,11 @@ loginUserMassage("shubham")
 //     return num1;
 // }
 
-function calculationcarprice(val1,val2,...num1){// return array reamining values in num1 
+function calculationcardPrice(val1,val2,...num1){// return array reamining values in num1 ...num1 rest oprater
     return num1;
 }
 
-// console.log(calculationcarprice(200,400,500,2000,300));
+// console.log(calculationcardPrice(200,400,500,2000,300));
 
 // objects in functions 
 
