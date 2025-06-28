@@ -1,6 +1,6 @@
 const coding = ["rb","js","java","python","cpp"]
 
-// coding.forEach( function(item){
+// coding.forEach( function(item){// callback fn ka nam nhi hota hai 
 //     console.log(item);
 // })
 
@@ -13,7 +13,7 @@ const coding = ["rb","js","java","python","cpp"]
 //     console.log(item);
 // }
 
-// coding.forEach(printMe)
+// coding.forEach(printMe) // ager function bna rkkha hai phle se to uska refrance bhi de skte hai 
 
 // coding.forEach((item ,index , arr) => {
 //     console.log(item,index,arr); 

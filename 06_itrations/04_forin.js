@@ -6,7 +6,7 @@ const myObject = {
 }
 // in tha forin loop object work properly 
 for (const key in myObject) {
-    //   console.log(`${key} shortcut is for ${myObject[key]}`);
+      console.log(`${key} shortcut is for ${myObject[key]}`);
        
 }
 
@@ -24,4 +24,5 @@ for (const key in programing) {
 
 // for (const key in map) { // is trh map pe ittrartion nhi ho skata
 //     console.log(key);   
+// map itrartable nhi hai
 //}

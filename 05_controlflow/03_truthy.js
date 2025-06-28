@@ -6,11 +6,11 @@ if (usereEmail) {
     console.log("on't have user email"); 
 }
 
-// falsy values
+// falsy values important value
 // false ,0,-0,BigInt 0n,"",null,undefined,NaN
 
 // truthy values 
-// "0",'flase'," ",[],{},function(){}
+// "0",'flase',"space ho ",[],{},function(){}
 
 // how to check empty array 
 

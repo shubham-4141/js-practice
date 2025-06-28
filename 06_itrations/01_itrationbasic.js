@@ -41,6 +41,7 @@ for (let index = 0; index < myArray.length; index++) { // conition change hona b
 for (let index = 1; index <= 20; index++) {
     if (index === 5) {
         console.log(`Detected 5`);
+        // break //ke kuch excute nhi hoga
         continue // it can skip the condition only one time jb condition detect hogi tb after that condition runs normlay
     }
     console.log(`value of index is ${index}`)
